@@ -518,8 +518,22 @@ for p, n, a in zip(prenoms, noms, ages):
 
 Bien entendu, pour pouvoir utiliser `zip()`, il faut que les listes soient de même taille.
 
+### Correction1
+```
+def intersection(l1,l2):
+    l3=[]
+    for e in l1:
+        if e in l2 and e not in l3:
+            l3.append(e)
+    return l3
 
 
+
+
+l1=[2,4,5,2,7,6]
+l2=[5,8,2,3,2]
+print("A inter B ", intersection(l1,l2))
+```
 ## Liste des exercices de ce chapitre
 
 1. [Argmax](ex4.1)
